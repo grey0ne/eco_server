@@ -9,6 +9,8 @@ services:
     volumes:
       - steamcmd_login_volume:/home/steam/Steam
       - steamcmd_volume:/home/steam/steamcmd
+      - eco_server_volume:/home/steam/eco_server
+
 
 volumes:
   steamcmd_volume:
@@ -17,3 +19,6 @@ volumes:
   steamcmd_login_volume:
     driver: local
     name: eco_server_steamlogin
+  eco_server_volume:
+    driver: local
+    name: eco_server_volume
