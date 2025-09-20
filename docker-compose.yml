@@ -23,7 +23,8 @@ services:
       NGINX_ENTRYPOINT_LOCAL_RESOLVERS: yes
     volumes:
       - ./nginx/templates:/etc/nginx/templates
-      - ./nginx/ssl:/app/ssl
+      - ./nginx/ssl/certificates:/etc/letsencrypt
+      - ./nginx/ssl/challenge:/var/www/certbot
     ports:
       - "80:80"
       - "443:443"

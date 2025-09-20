@@ -4,10 +4,10 @@ server {
 
     server_name eco.grey.one;
 
-    ssl_certificate /app/ssl/eco.crt;
-    ssl_certificate_key /app/ssl/eco.key;
+    ssl_certificate /etc/letsencrypt/live/eco.grey.one/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/eco.grey.one/privkey.pem;
 
-    client_max_body_size 50000k;
+    client_max_body_size 1000k;
 
     gzip on;
     gzip_min_length 1000;
