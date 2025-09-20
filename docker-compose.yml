@@ -11,9 +11,10 @@ services:
     volumes:
       - steamcmd_login_volume:/home/steam/Steam
       - steamcmd_volume:/home/steam/steamcmd
-      - eco_server_volume:/home/steam/eco_server
+        #- eco_server_logs:/home/steam/eco_server/Logs
+        #- ./storage:/home/steam/eco_server/Storage
     command:
-      /home/steam/eco_server/EcoServer --offline
+      /home/steam/eco_server/EcoServer -userToken=${ECO_TOKEN}
     ports:
       - "3000:3000/udp"
   nginx:
@@ -37,6 +38,6 @@ volumes:
   steamcmd_login_volume:
     driver: local
     name: eco_server_steamlogin
-  eco_server_volume:
+  eco_server_logs:
     driver: local
-    name: eco_server_volume
+    name: eco_server_logs
