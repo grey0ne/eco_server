@@ -37,3 +37,16 @@ server {
     }
 
 }
+
+server {
+    listen 80 default_server;
+    server_name _;
+
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+    }
+
+    location / {
+        return 403;
+    }
+}
