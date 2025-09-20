@@ -1,0 +1,19 @@
+name: grey_eco_server
+
+services:
+  steamcmd:
+    image: grey_eco_server     
+    platform: linux/amd64
+    build:
+      context: ./
+    volumes:
+      - steamcmd_login_volume:/home/steam/Steam
+      - steamcmd_volume:/home/steam/steamcmd
+
+volumes:
+  steamcmd_volume:
+    driver: local
+    name: eco_server_steamcmd
+  steamcmd_login_volume:
+    driver: local
+    name: eco_server_steamlogin
