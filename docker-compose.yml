@@ -2,7 +2,9 @@ name: grey_eco_server
 
 services:
   steamcmd:
-    image: grey_eco_server     
+    image: grey_eco_server
+    domainname: eco_server
+    container_name: eco_server
     platform: linux/amd64
     build:
       context: ./
@@ -12,6 +14,19 @@ services:
       - eco_server_volume:/home/steam/eco_server
     command:
       /home/steam/eco_server/EcoServer --offline
+    ports:
+      - 3000:3000
+  nginx:
+    image: "nginx:1.27.5-alpine-slim"
+    container_name: nginx
+    environment:
+      NGINX_ENTRYPOINT_LOCAL_RESOLVERS: yes
+    volumes:
+      - ./nginx/templates:/etc/nginx/templates
+      - ./nginx/ssl:/app/ssl
+    ports:
+      - "80:80"
+      - "443:443"
 
 
 volumes:
