@@ -17,7 +17,7 @@ server {
     resolver $NGINX_LOCAL_RESOLVERS valid=30s;
 
     location ~ ^/ {
-        set eco eco_server;
+        set $eco eco_server;
         proxy_buffer_size   128k;
         proxy_buffers   4 256k;
         proxy_busy_buffers_size   256k;
@@ -25,24 +25,11 @@ server {
         proxy_send_timeout          120;
         proxy_read_timeout          120;
         send_timeout                120;
-        proxy_pass http://eco:3001;
+        proxy_pass http://$eco:3001;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Scheme $scheme;
         proxy_set_header Host $host;
         proxy_set_header X-Forwarded-Proto 'https';
     }
 
-}
-
-server {
-    listen 80;
-    server_name eco.grey.one;
-
-    location /.well-known/acme-challenge/ {
-        root /var/www/certbot;
-    }
-
-    location / {
-        return 403;
-    }
 }
