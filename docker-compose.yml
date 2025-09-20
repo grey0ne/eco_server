@@ -10,6 +10,8 @@ services:
       - steamcmd_login_volume:/home/steam/Steam
       - steamcmd_volume:/home/steam/steamcmd
       - eco_server_volume:/home/steam/eco_server
+    command:
+      /home/steam/eco_server/EcoServer --offline
 
 
 volumes:
