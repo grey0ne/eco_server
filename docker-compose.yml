@@ -11,8 +11,9 @@ services:
     volumes:
       - steamcmd_login_volume:/home/steam/Steam
       - steamcmd_volume:/home/steam/steamcmd
-        #- eco_server_logs:/home/steam/eco_server/Logs
-        #- ./storage:/home/steam/eco_server/Storage
+      - eco_server_logs:/home/steam/eco_server/Logs
+      - eco_server_storage:/home/steam/eco_server/Storage
+      - ./Configs:/home/steam/eco_server/Configs
     command:
       /home/steam/eco_server/EcoServer -userToken=${ECO_TOKEN}
     ports:
@@ -41,3 +42,6 @@ volumes:
   eco_server_logs:
     driver: local
     name: eco_server_logs
+  eco_server_storage:
+    driver: local
+    name: eco_server_storage
