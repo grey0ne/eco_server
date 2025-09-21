@@ -9,7 +9,7 @@
   },
   "WaterLevel": 60,
   "MaxGenerationHeight": 160,
-  "MaxBuildHeight": 200,
+  "MaxBuildHeight": 160,
   "HeightmapModule": {
     "$id": "3",
     "$type": "Eco.WorldGenerator.EcoTerraceNode, Eco.WorldGenerator",
@@ -18,7 +18,7 @@
       "$type": "Eco.WorldGenerator.VoronoiModule, Eco.WorldGenerator",
       "Config": {
         "$id": "5",
-        "Seed": 0,
+        "Seed": 1078210056,
         "PointRadius": 10.0,
         "LandPercentRange": {
           "min": 0.65,

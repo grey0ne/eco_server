@@ -8,6 +8,6 @@ source .env
 if [ $1 = "start" ]; then
     sudo docker compose up -d
 elif [ $1 = "stop" ]; then
-    sduo docker compose down
+    sudo docker compose down
 fi
     
