@@ -1,16 +1,16 @@
 {
   "GameSettings": {
     "DesiredNumberOfPlayers": 100,
-    "HoursPlayedPerDay": 3.0,
+    "HoursPlayedPerDay": 6.0,
     "CollaborationLevel": "HighCollaboration",
     "GameSpeed": "Normal",
     "SimulationLevel": "Normal",
     "ExhaustionEnabled": true,
-    "HasMeteor": false,
+    "HasMeteor": true,
     "AllowFriendsToJoin": true,
     "GenerateRandomWorld": false,
     "AdvancedGameSettings": {
-      "MeteorImpactInDays": 30.0,
+      "MeteorImpactInDays": 200.0,
       "MaxProfessionsPerCitizen": 4.0,
       "MaxSpecialtiesPerCitizen": 20.0,
       "SkillCostMultiplier": 1.0,
@@ -25,7 +25,7 @@
       "WeightMultiplier": 1.0,
       "FuelEfficiencyMultiplier": 1.0,
       "GrowthRateMultiplier": 1.0,
-      "ConnectionRangeMultiplier": 1.0,
+      "ConnectionRangeMultiplier": 2.0,
       "ShelfLifeMultiplier": 1.0,
       "AllowDeepOceanBuilding": false,
       "RequireSkillsToReplaceParts": true,
