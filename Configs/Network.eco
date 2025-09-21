@@ -1,5 +1,5 @@
 {
-  "PublicServer": true,
+  "PublicServer": false,
   "Playtime": "",
   "DiscordAddress": "https://discord.gg/QTm5Ue4V",
   "Password": "",
@@ -21,6 +21,6 @@
   "MaxUsersLoadingAtSameTime": 20,
   "ID": "574b626f-8b74-4918-a7be-0e615a4a930e",
   "Passport": "499b3f53-26d7-4a6b-a705-0268f51b0e8a",
-  "UPnPEnabled": true,
+  "UPnPEnabled": false,
   "RelayServerAddress": ""
 }
