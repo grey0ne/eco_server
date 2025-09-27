@@ -12,7 +12,7 @@
     "AdvancedGameSettings": {
       "MeteorImpactInDays": 200.0,
       "MaxProfessionsPerCitizen": 4.0,
-      "MaxSpecialtiesPerCitizen": 20.0,
+      "MaxSpecialtiesPerCitizen": 15.0,
       "SkillCostMultiplier": 1.0,
       "CraftResourceMultiplier": 1.0,
       "CraftTimeMultiplier": 1.0,
@@ -24,7 +24,7 @@
       "StackSizeMultiplier": 1.0,
       "WeightMultiplier": 1.0,
       "FuelEfficiencyMultiplier": 1.0,
-      "GrowthRateMultiplier": 1.0,
+      "GrowthRateMultiplier": 2.0,
       "ConnectionRangeMultiplier": 2.0,
       "ShelfLifeMultiplier": 1.0,
       "AllowDeepOceanBuilding": false,
