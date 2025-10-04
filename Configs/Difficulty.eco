@@ -16,7 +16,7 @@
       "SkillCostMultiplier": 1.0,
       "CraftResourceMultiplier": 1.0,
       "CraftTimeMultiplier": 1.0,
-      "ClaimStakesGrantedUponSkillscrollConsumed": 0.0,
+      "ClaimStakesGrantedUponSkillscrollConsumed": 1.0,
       "ClaimPapersGrantedUponSkillscrollConsumed": 0.0,
       "CanAbandonSpecialties": true,
       "SpecialtyRefundPercentage": 0.0,
