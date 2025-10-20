@@ -1,22 +1,23 @@
 {
   "GameSettings": {
     "DesiredNumberOfPlayers": 100,
-    "HoursPlayedPerDay": 6.0,
+    "HoursPlayedPerDay": 10.0,
     "CollaborationLevel": "HighCollaboration",
     "GameSpeed": "Normal",
+    "AnimalBehavior": "DefensiveOnly",
     "SimulationLevel": "Normal",
     "ExhaustionEnabled": true,
     "HasMeteor": true,
     "AllowFriendsToJoin": true,
     "GenerateRandomWorld": false,
     "AdvancedGameSettings": {
-      "MeteorImpactInDays": 200.0,
+      "MeteorImpactInDays": 500.0,
       "MaxProfessionsPerCitizen": 4.0,
-      "MaxSpecialtiesPerCitizen": 15.0,
+      "MaxSpecialtiesPerCitizen": 14.0,
       "SkillCostMultiplier": 1.0,
-      "CraftResourceMultiplier": 1.0,
+      "CraftResourceMultiplier": 0.7,
       "CraftTimeMultiplier": 1.0,
-      "ClaimStakesGrantedUponSkillscrollConsumed": 1.0,
+      "ClaimStakesGrantedUponSkillscrollConsumed": 0.0,
       "ClaimPapersGrantedUponSkillscrollConsumed": 0.0,
       "CanAbandonSpecialties": true,
       "SpecialtyRefundPercentage": 0.0,
@@ -26,10 +27,11 @@
       "FuelEfficiencyMultiplier": 1.0,
       "GrowthRateMultiplier": 2.0,
       "ConnectionRangeMultiplier": 2.0,
-      "ShelfLifeMultiplier": 1.0,
+      "ShelfLifeMultiplier": 10.0,
       "AllowDeepOceanBuilding": false,
       "RequireSkillsToReplaceParts": true,
-      "BrokenPartsWillDisableVehicles": true
+      "BrokenPartsWillDisableVehicles": true,
+      "AnimalUnprovokedAttackFrequencyMultiplier": 1.0
     }
   },
   "EndgameCraftCost": "Normal",
